@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo__wrapper">
+                        <div class="menu__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <a class="logo" href="#">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="header__container">
+                        <div class="header__top">
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link active">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">
+                                            Автопарк
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">
+                                            Аренда
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">
+                                            Для бизнеса
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                    <li class="menu__list-item">
+                                        <a href="#" class="menu__list-link">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header__socials">
+                                <a class="header__socials-item" href="#">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5461 20H4.88308C4.39522 20 4 19.6045 4 19.1169V4.88307C4 4.39528 4.39529 4 4.88308 4H19.117C19.6047 4 20 4.39528 20 4.88307V19.1169C20 19.6046 19.6046 20 19.117 20H15.0398V13.8039H17.1195L17.4309 11.3892H15.0398V9.84755C15.0398 9.14843 15.2339 8.672 16.2364 8.672L17.5151 8.67144V6.5117C17.294 6.48227 16.5349 6.41652 15.6519 6.41652C13.8083 6.41652 12.5461 7.54184 12.5461 9.6084V11.3892H10.461V13.8039H12.5461V20Z" fill="white"/>
+                                    </svg>
+                                </a>
+                                <a class="header__socials-item" href="#">
+                                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.52786 15.2767L5.58208 15.0768L5.47905 14.8971C4.89353 13.876 4.55226 12.6593 4.55226 11.4479C4.55226 7.61111 7.67171 4.5 11.5261 4.5C13.379 4.5 15.1339 5.22819 16.4519 6.54167C17.763 7.84817 18.4494 9.59491 18.5 11.4026C18.4963 15.2363 15.3783 18.3438 11.5261 18.3438C10.3565 18.3438 9.23345 18.0527 8.2035 17.5151L8.0322 17.4257L7.84529 17.4747L4.70866 18.2973L5.52786 15.2767ZM12.5431 15.402L12.5745 15.4145L12.6074 15.4227C13.0938 15.5439 13.579 15.5454 13.9548 15.4837C14.2375 15.4418 14.5797 15.2841 14.8578 15.1017C15.1276 14.9248 15.4639 14.643 15.6004 14.2803C15.6954 14.0278 15.7447 13.7867 15.7615 13.5778C15.7773 13.3803 15.767 13.1751 15.7111 13.0081L15.6736 12.8959L15.5899 12.8125C15.5116 12.7345 15.4204 12.6808 15.355 12.6446C15.2897 12.6084 15.2078 12.5675 15.1164 12.5219C14.9865 12.4423 14.7073 12.2986 14.4669 12.1788C14.3273 12.1092 14.1864 12.0407 14.0693 11.9857C13.9649 11.9367 13.8475 11.8831 13.7743 11.8588C13.7707 11.8576 13.7662 11.8561 13.7612 11.8543C13.697 11.8324 13.5249 11.7733 13.343 11.7898C13.2262 11.8004 13.102 11.84 12.9883 11.9243C12.8786 12.0055 12.8036 12.1098 12.7517 12.2133C12.7278 12.261 12.6448 12.3776 12.5247 12.5239C12.4586 12.6044 12.3946 12.6779 12.3459 12.732C12.3284 12.7239 12.31 12.7155 12.2907 12.7067C12.0216 12.5841 11.5803 12.3831 11.0202 11.9058C10.6037 11.5273 10.3115 11.1211 10.1702 10.8926C10.1772 10.884 10.1834 10.8763 10.1885 10.8698C10.2027 10.8519 10.2196 10.8302 10.235 10.8104C10.2419 10.8015 10.2485 10.793 10.2543 10.7855C10.3001 10.7268 10.3355 10.684 10.3634 10.6563L10.0105 10.3021L10.3634 10.6563C10.5259 10.4943 10.6088 10.3289 10.6614 10.2238C10.6631 10.2204 10.6648 10.2171 10.6664 10.2138C10.7895 9.96854 10.7895 9.69813 10.6664 9.45286L10.63 9.38025L10.6232 9.37347C10.6137 9.35311 10.602 9.32688 10.5878 9.29457C10.5462 9.19921 10.4925 9.07022 10.4338 8.92731C10.398 8.84008 10.3602 8.74731 10.3227 8.65526C10.2403 8.45292 10.1593 8.25408 10.1039 8.12538C10.0027 7.89012 9.85665 7.68067 9.62224 7.57449C9.42022 7.48298 9.16789 7.51042 9.22648 7.51042H9.22587H9.22525H9.22464H9.22402H9.2234H9.22278H9.22216H9.22154H9.22092H9.2203H9.21967H9.21904H9.21842H9.21779H9.21716H9.21653H9.2159H9.21527H9.21463H9.214H9.21336H9.21272H9.21209H9.21145H9.21081H9.21016H9.20952H9.20888H9.20823H9.20759H9.20694H9.20629H9.20564H9.20499H9.20434H9.20369H9.20304H9.20238H9.20173H9.20107H9.20042H9.19976H9.1991H9.19844H9.19778H9.19712H9.19645H9.19579H9.19512H9.19446H9.19379H9.19312H9.19245H9.19178H9.19111H9.19044H9.18977H9.1891H9.18842H9.18775H9.18707H9.18639H9.18571H9.18503H9.18435H9.18367H9.18299H9.18231H9.18163H9.18094H9.18026H9.17957H9.17888H9.1782H9.17751H9.17682H9.17613H9.17544H9.17474H9.17405H9.17336H9.17266H9.17197H9.17127H9.17058H9.16988H9.16918H9.16848H9.16778H9.16708H9.16638H9.16568H9.16497H9.16427H9.16356H9.16286H9.16215H9.16144H9.16074H9.16003H9.15932H9.15861H9.1579H9.15719H9.15648H9.15576H9.15505H9.15434H9.15362H9.15291H9.15219H9.15147H9.15076H9.15004H9.14932H9.1486H9.14788H9.14716H9.14644H9.14571H9.14499H9.14427H9.14354H9.14282H9.14209H9.14137H9.14064H9.13992H9.13919H9.13846H9.13773H9.137H9.13627H9.13554H9.13481H9.13408H9.13335H9.13261H9.13188H9.13115H9.13041H9.12968H9.12894H9.12821H9.12747H9.12673H9.12599H9.12526H9.12452H9.12378H9.12304H9.1223H9.12156H9.12082H9.12008H9.11933H9.11859H9.11785H9.1171H9.11636H9.11562H9.11487H9.11413H9.11338H9.11264H9.11189H9.11114H9.11039H9.10965H9.1089H9.10815H9.1074H9.10665H9.1059H9.10515H9.1044H9.10365H9.1029H9.10215H9.1014H9.10064H9.09989H9.09914H9.09838H9.09763H9.09688H9.09612H9.09537H9.09461H9.09386H9.0931H9.09235H9.09159H9.09083H9.09008H9.08932H9.08856H9.08781H9.08705H9.08629H9.08553H9.08477H9.08401H9.08325H9.08249H9.08174H9.08098H9.08022H9.07945H9.07869H9.07793H9.07717H9.07641H9.07565H9.07489H9.07413H9.07336H9.0726H9.07184H9.07108H9.07032H9.06955H9.06879H9.06803H9.06726H9.0665H9.06574H9.06497H9.06421H9.06344H9.06268H9.06192H9.06115H9.06039H9.05962H9.05886H9.05809H9.05733H9.05656H9.0558H9.05503H9.05427H9.0535H9.05274H9.05197H9.05121H9.05044H9.04968H9.04891H9.04815H9.04738H9.04662H9.04585H9.04508H9.04432H9.04355H9.04279H9.04202H9.04126H9.04049H9.03972H9.03896H9.03819H9.03743H9.03666H9.0359H9.03513H9.03437H9.0336H9.03284H9.03207H9.03131H9.03054H9.02978H9.02901H9.02825H9.02748H9.02672H9.02595H9.02519H9.02443H9.02366H9.0229H9.02213H9.02137H9.02061H9.01984H9.01908H9.01832H9.01755H9.01679H9.01603H9.01527H9.0145H9.01374H9.01298H9.01222H9.01146H9.01069H9.00993H9.00917H9.00841H9.00765H9.00689H9.00613H9.00537H9.00461H9.00385H9.00309H9.00233H9.00157H9.00082H9.00006H8.9993H8.99854H8.99779H8.99703H8.99627H8.99552H8.99476H8.994H8.99325H8.99249H8.99174H8.99098H8.99023H8.98947H8.98872H8.98797H8.98721H8.98646H8.98571H8.98496H8.98421H8.98346H8.9827H8.98195H8.9812H8.98045H8.9797H8.97896H8.97821H8.97746H8.97671H8.97596H8.97522H8.97447H8.97372H8.97298H8.97223H8.97149H8.97075H8.97H8.96926H8.96851H8.96777H8.96703H8.96629H8.96555H8.96481H8.96407H8.96333H8.96259H8.96185H8.96111H8.96037H8.95964H8.9589H8.95816H8.95743H8.95669H8.95596H8.95523H8.95449H8.95376H8.95303H8.9523H8.95156H8.95083H8.9501H8.94937H8.94865H8.94792H8.94719H8.94646H8.94574H8.94501H8.94429H8.94356H8.94284H8.94211H8.94139H8.94067H8.93995H8.93923H8.93851H8.93779H8.93707H8.93635H8.93563H8.93492H8.9342H8.93348H8.93277H8.93206H8.93134H8.93063H8.92992H8.92921H8.9285H8.92779H8.92708H8.92637H8.92566H8.92495H8.92425H8.92354H8.92284H8.92213H8.92143H8.92073H8.92003H8.91933H8.91863H8.91793H8.91723H8.91653H8.91583H8.91514H8.91444H8.91375H8.91305H8.91236H8.91167H8.91098H8.91029H8.9096H8.90891H8.90822H8.90754H8.90685H8.90616H8.90548H8.9048H8.90411H8.90343H8.90275H8.90207H8.90139H8.90071H8.90004H8.89936H8.89868H8.89801H8.89734H8.89666H8.89599H8.89532H8.89465H8.89398H8.89332H8.89265H8.89198H8.89132H8.89065H8.88999H8.88933H8.88867H8.88801H8.88735H8.88669H8.88603H8.88538H8.88472H8.88407H8.88341H8.88276H8.88211H8.88146H8.88081H8.88017H8.87952H8.87887H8.87823H8.87758H8.87694H8.8763H8.87566H8.87502H8.87438H8.87375H8.87311H8.87247H8.87184H8.87121H8.87058H8.86995H8.86932H8.86869H8.86806H8.86744H8.86681H8.86619H8.86556H8.86494H8.86432H8.8637H8.86309H8.86247H8.86185H8.86124H8.86063C8.85578 7.51042 8.85062 7.5104 8.84516 7.51038C8.68076 7.50987 8.24671 7.50853 7.93848 7.91808C7.93412 7.92387 7.92421 7.93554 7.90999 7.95229C7.83887 8.03605 7.65991 8.24681 7.52833 8.48408C7.3527 8.80077 7.2108 9.22223 7.2108 9.78125C7.2108 10.3629 7.41871 10.9012 7.62004 11.2881C7.79387 11.6222 7.98722 11.8891 8.09925 12.0167C8.29174 12.3081 9.53681 14.1638 11.4754 14.976C11.7906 15.1316 12.1085 15.2449 12.3339 15.3252C12.4182 15.3552 12.4896 15.3806 12.5431 15.402ZM12.2607 12.8218C12.2607 12.8218 12.2613 12.8213 12.2625 12.8203C12.2613 12.8214 12.2607 12.8219 12.2607 12.8218Z" fill="white" stroke="white"/>
+                                    </svg>
+                                </a>
+                                <a class="header__socials-item" href="#">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C9.82733 4 9.5549 4.00921 8.70161 4.04814C7.8501 4.08698 7.26855 4.22223 6.7597 4.42001C6.23363 4.62442 5.78748 4.89797 5.34271 5.34271C4.89797 5.78748 4.62442 6.23363 4.42001 6.7597C4.22223 7.26855 4.08698 7.8501 4.04814 8.70161C4.00921 9.5549 4 9.82733 4 12C4 14.1727 4.00921 14.4451 4.04814 15.2984C4.08698 16.1499 4.22223 16.7314 4.42001 17.2403C4.62442 17.7664 4.89797 18.2125 5.34271 18.6573C5.78748 19.102 6.23363 19.3756 6.7597 19.58C7.26855 19.7778 7.8501 19.913 8.70161 19.9519C9.5549 19.9908 9.82733 20 12 20C14.1727 20 14.4451 19.9908 15.2984 19.9519C16.1499 19.913 16.7314 19.7778 17.2403 19.58C17.7664 19.3756 18.2125 19.102 18.6573 18.6573C19.102 18.2125 19.3756 17.7664 19.58 17.2403C19.7778 16.7314 19.913 16.1499 19.9519 15.2984C19.9908 14.4451 20 14.1727 20 12C20 9.82733 19.9908 9.5549 19.9519 8.70161C19.913 7.8501 19.7778 7.26855 19.58 6.7597C19.3756 6.23363 19.102 5.78748 18.6573 5.34271C18.2125 4.89797 17.7664 4.62442 17.2403 4.42001C16.7314 4.22223 16.1499 4.08698 15.2984 4.04814C14.4451 4.00921 14.1727 4 12 4ZM12 5.44144C14.1361 5.44144 14.3891 5.4496 15.2327 5.48809C16.0127 5.52366 16.4363 5.65398 16.7182 5.76354C17.0916 5.90867 17.3581 6.08202 17.638 6.36198C17.918 6.64191 18.0913 6.90841 18.2365 7.28183C18.346 7.56373 18.4763 7.98732 18.5119 8.76731C18.5504 9.61088 18.5586 9.86391 18.5586 12C18.5586 14.1361 18.5504 14.3891 18.5119 15.2327C18.4763 16.0127 18.346 16.4363 18.2365 16.7182C18.0913 17.0916 17.918 17.3581 17.638 17.638C17.3581 17.918 17.0916 18.0913 16.7182 18.2365C16.4363 18.346 16.0127 18.4763 15.2327 18.5119C14.3892 18.5504 14.1362 18.5586 12 18.5586C9.86375 18.5586 9.61079 18.5504 8.76731 18.5119C7.98732 18.4763 7.56373 18.346 7.28183 18.2365C6.90841 18.0913 6.64191 17.918 6.36198 17.638C6.08205 17.3581 5.90867 17.0916 5.76354 16.7182C5.65398 16.4363 5.52366 16.0127 5.48809 15.2327C5.4496 14.3891 5.44144 14.1361 5.44144 12C5.44144 9.86391 5.4496 9.61088 5.48809 8.76731C5.52366 7.98732 5.65398 7.56373 5.76354 7.28183C5.90867 6.90841 6.08202 6.64191 6.36198 6.36198C6.64191 6.08202 6.90841 5.90867 7.28183 5.76354C7.56373 5.65398 7.98732 5.52366 8.76731 5.48809C9.61088 5.4496 9.86391 5.44144 12 5.44144ZM7.89189 12C7.89189 9.73114 9.73114 7.89189 12 7.89189C14.2689 7.89189 16.1081 9.73114 16.1081 12C16.1081 14.2689 14.2689 16.1081 12 16.1081C9.73114 16.1081 7.89189 14.2689 7.89189 12ZM12 14.6667C10.5272 14.6667 9.33333 13.4728 9.33333 12C9.33333 10.5272 10.5272 9.33333 12 9.33333C13.4728 9.33333 14.6667 10.5272 14.6667 12C14.6667 13.4728 13.4728 14.6667 12 14.6667ZM16.2704 8.68957C16.8006 8.68957 17.2304 8.25979 17.2304 7.72959C17.2304 7.19939 16.8006 6.76957 16.2704 6.76957C15.7402 6.76957 15.3104 7.19939 15.3104 7.72959C15.3104 8.25979 15.7402 8.68957 16.2704 8.68957Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__bottom">
+                            <a href="tel:89958883094" class="header__phone">8 (995) 888-30-94</a>
+                            <div class="mobile__apps">
+                                <a href="#" class="mobile__apps-icon">
+                                    <img src="images/app-store.png" alt="">
+                                </a>
+                                <a href="#" class="mobile__apps-icon">
+                                    <img src="images/google-play.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="intro bg" style="background-image: url(images/intro-bg.jpg);">
+                <div class="container">
+                    <div class="intro__header">
+                        <h3 class="intro__suptitle">
+                            АРЕНДА
+                        </h3>
+                        <h2 class="intro__title">
+                            ПРЕМИУМ АВТОМОБИЛЕЙ
+                        </h2>
+                        <button class="intro__btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="intro__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (1).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (2).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (3).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (4).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (5).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (6).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (8).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (9).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (10).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (11).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (12).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (13).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (14).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="intro__slider-item swiper-slide">
+                                <a href="#" class="intro__slider-link" tabindex="-1">
+                                    <img src="images/cars/ (15).jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="intro__slider-controls">
+                            <div class="intro__slider-prev">
+                                <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.4L6.6 0L0.6 6L6.6 12L8 10.6L4.4 7H31V5H4.4L8 1.4Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="intro__slider-scrollbar"></div>
+                            <div class="intro__slider-next">
+                                <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23 1.4L24.4 0L30.4 6L24.4 12L23 10.6L26.6 7H0V5H26.6L23 1.4Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="types">
+                <div class="container-fluid">
+                    <div class="section__header">
+                        <h3 class="section__suptitle">
+                            ВИДЫ
+                        </h3>
+                        <h2 class="section__title">
+                            АРЕНДЫ
+                        </h2>
+                    </div>
+                    <div class="types__items">
+                        <div class="types__item">
+                            <img src="images/types/1.jpg" alt="">
+                            <a href="#" class="types__item-btn btn">С ВОДИТЕЛЕМ</a>
+                        </div>
+                        <div class="types__item">
+                            <img src="images/types/2.jpg" alt="">
+                            <a href="#" class="types__item-btn btn">ДЛЯ ОСОБЫХ ЦЕЛЕЙ</a>
+                        </div>
+                        <div class="types__item">
+                            <img src="images/types/3.jpg" alt="">
+                            <a href="#" class="types__item-btn btn">БЕЗ ВОДИТЕЛЯ</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="park">
+                <div class="container-fluid">
+                    <div class="section__header">
+                        <h2 class="section__title">
+                            АРЕНДЫ
+                        </h2>
+                    </div>
+                    <div class="park__slider">
+                        <div class="swiper-wrapper">
+                            <div class="park__slider-item swiper-slide business">
+                                <img src="images/cars/ (1).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide business">
+                                <img src="images/cars/ (2).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide premium">
+                                <img src="images/cars/ (3).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide business">
+                                <img src="images/cars/ (4).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide sport">
+                                <img src="images/cars/ (5).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide premium">
+                                <img src="images/cars/ (6).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide sport">
+                                <img src="images/cars/ (8).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide premium">
+                                <img src="images/cars/ (9).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide sport">
+                                <img src="images/cars/ (10).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide premium">
+                                <img src="images/cars/ (11).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide business">
+                                <img src="images/cars/ (12).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide business">
+                                <img src="images/cars/ (13).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide premium">
+                                <img src="images/cars/ (14).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                            <div class="park__slider-item swiper-slide premium">
+                                <img src="images/cars/ (15).jpg" alt="">
+                                <a href="#" class="park__slider-item__btn btn" tabindex="-1">ЗАКАЗАТЬ МАШИНУ</a>
+                            </div>
+                        </div>
+                        <div class="park__slider-controls">
+                            <div class="park__slider-prev">
+                                <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.4L6.6 0L0.6 6L6.6 12L8 10.6L4.4 7H31V5H4.4L8 1.4Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="park__slider-scrollbar"></div>
+                            <div class="park__slider-next">
+                                <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23 1.4L24.4 0L30.4 6L24.4 12L23 10.6L26.6 7H0V5H26.6L23 1.4Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="park__slider-filters">
+                            <button class="park__slider-filter" value="premium">Премиум</button>
+                            <button class="park__slider-filter" value="business">Бизнес</button>
+                            <button class="park__slider-filter" value="sport">Спорт</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="conditions bg" style="background-image: url(images/conditions-bg.jpg);">
+                <div class="container">
+                    <div class="section__header">
+                        <h3 class="section__suptitle">
+                            УСЛОВИЯ
+                        </h3>
+                        <h2 class="section__title">
+                            АРЕНДЫ
+                        </h2>
+                    </div>
+                    <div class="conditions__inner">
+                        <div class="conditions__items">
+                            <div class="conditions__item">
+                                <button class="conditions__item-top">
+                                    Бронирование
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 11L15 15.6L19.6 11L21 12.4L15 18.4L9 12.4L10.4 11Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <div class="conditions__item-bottom">
+                                    <ul>
+                                        <li>
+                                            Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+                                        </li>
+                                        <li>
+                                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                                        </li>
+                                        <li>
+                                            Не передавать управление другому человеку без оформления на него договора аренды. При желании вы можете бесплатно внести второго водителя в договор аренды.
+                                        </li>
+                                        <li>
+                                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                                        </li>
+                                        <li>
+                                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                                        </li>
+                                        <li>
+                                            Соблюдать правила парковки
+                                        </li>
+                                        <li>
+                                            Соблюдать чистоту и не курить в салоне автомобиля.
+                                        </li>
+                                        <li>
+                                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с салоном автомобиля.
+                                        </li>
+                                        <li>
+                                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного осмотра.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <button class="conditions__item-top">
+                                    ПРАВИЛА АРЕНДЫ
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 11L15 15.6L19.6 11L21 12.4L15 18.4L9 12.4L10.4 11Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <div class="conditions__item-bottom">
+                                    <ul>
+                                        <li>
+                                            Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+                                        </li>
+                                        <li>
+                                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                                        </li>
+                                        <li>
+                                            Не передавать управление другому человеку без оформления на него договора аренды. При желании вы можете бесплатно внести второго водителя в договор аренды.
+                                        </li>
+                                        <li>
+                                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                                        </li>
+                                        <li>
+                                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                                        </li>
+                                        <li>
+                                            Соблюдать правила парковки
+                                        </li>
+                                        <li>
+                                            Соблюдать чистоту и не курить в салоне автомобиля.
+                                        </li>
+                                        <li>
+                                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с салоном автомобиля.
+                                        </li>
+                                        <li>
+                                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного осмотра.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <button class="conditions__item-top">
+                                    Обеспечительный платеж
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 11L15 15.6L19.6 11L21 12.4L15 18.4L9 12.4L10.4 11Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <div class="conditions__item-bottom">
+                                    <ul>
+                                        <li>
+                                            Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+                                        </li>
+                                        <li>
+                                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                                        </li>
+                                        <li>
+                                            Не передавать управление другому человеку без оформления на него договора аренды. При желании вы можете бесплатно внести второго водителя в договор аренды.
+                                        </li>
+                                        <li>
+                                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                                        </li>
+                                        <li>
+                                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                                        </li>
+                                        <li>
+                                            Соблюдать правила парковки
+                                        </li>
+                                        <li>
+                                            Соблюдать чистоту и не курить в салоне автомобиля.
+                                        </li>
+                                        <li>
+                                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с салоном автомобиля.
+                                        </li>
+                                        <li>
+                                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного осмотра.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <button class="conditions__item-top">
+                                    страхование
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 11L15 15.6L19.6 11L21 12.4L15 18.4L9 12.4L10.4 11Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <div class="conditions__item-bottom">
+                                    <ul>
+                                        <li>
+                                            Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+                                        </li>
+                                        <li>
+                                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                                        </li>
+                                        <li>
+                                            Не передавать управление другому человеку без оформления на него договора аренды. При желании вы можете бесплатно внести второго водителя в договор аренды.
+                                        </li>
+                                        <li>
+                                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                                        </li>
+                                        <li>
+                                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                                        </li>
+                                        <li>
+                                            Соблюдать правила парковки
+                                        </li>
+                                        <li>
+                                            Соблюдать чистоту и не курить в салоне автомобиля.
+                                        </li>
+                                        <li>
+                                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с салоном автомобиля.
+                                        </li>
+                                        <li>
+                                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного осмотра.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <button class="conditions__item-top">
+                                    доставка и возврат
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4 11L15 15.6L19.6 11L21 12.4L15 18.4L9 12.4L10.4 11Z" fill="white"/>
+                                    </svg>
+                                </button>
+                                <div class="conditions__item-bottom">
+                                    <ul>
+                                        <li>
+                                            Эксплуатировать автомобиль только в пределах СПб и ЛО. Выезд за пределы ЛО согласовывается индивидуально.
+                                        </li>
+                                        <li>
+                                            Не нарушать скоростные ограничения и не использовать экстремальные техники вождения.
+                                        </li>
+                                        <li>
+                                            Не передавать управление другому человеку без оформления на него договора аренды. При желании вы можете бесплатно внести второго водителя в договор аренды.
+                                        </li>
+                                        <li>
+                                            Не управлять транспортным средством в состоянии алкогольного опьянения.
+                                        </li>
+                                        <li>
+                                            Не перевозить оружие и вещества, запрещенные законодательством Российской Федерации.
+                                        </li>
+                                        <li>
+                                            Соблюдать правила парковки
+                                        </li>
+                                        <li>
+                                            Соблюдать чистоту и не курить в салоне автомобиля.
+                                        </li>
+                                        <li>
+                                            Перевозить животных только в закрытых переносках, исключающих прямой контакт животных с салоном автомобиля.
+                                        </li>
+                                        <li>
+                                            Вернуть автомобиль в целости, сохранности, технически исправным и чистым для оперативного осмотра.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="conditions__benefits">
+                            <div class="conditions__benefit">
+                                <h4 class="conditions__benefit-title">
+                                    <img src="images/documents.svg" alt="">
+                                    Документы
+                                </h4>
+                                <div class="conditions__benefit-text">
+                                    Паспорт и водительское
+                                    удостоверение
+                                </div>
+                            </div>
+                            <div class="conditions__benefit">
+                                <h4 class="conditions__benefit-title">
+                                    <img src="images/user-list.svg" alt="">
+                                    Возраст
+                                </h4>
+                                <div class="conditions__benefit-text">
+                                    от 21 года
+                                </div>
+                            </div>
+                            <div class="conditions__benefit">
+                                <h4 class="conditions__benefit-title">
+                                    <img src="images/ClockCircle.svg" alt="">
+                                    Стаж
+                                </h4>
+                                <div class="conditions__benefit-text">
+                                    не менее 2 лет
+                                </div>
+                            </div>
+                            <div class="conditions__benefit">
+                                <h4 class="conditions__benefit-title">
+                                    <img src="images/timer.svg" alt="">
+                                    Срок аренды
+                                </h4>
+                                <div class="conditions__benefit-text">
+                                    от 1 часа
+                                </div>
+                            </div>
+                            <div class="conditions__benefit">
+                                <h4 class="conditions__benefit-title">
+                                    <img src="images/credit-card.svg" alt="">
+                                    Цена
+                                </h4>
+                                <div class="conditions__benefit-text">
+                                    фиксированная
+                                </div>
+                            </div>
+                            <div class="conditions__benefit">
+                                <h4 class="conditions__benefit-title">
+                                    <img src="images/Handshake.svg" alt="">
+                                    Управление
+                                </h4>
+                                <div class="conditions__benefit-text">
+                                    возможна передача
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="section__header">
+                        <h3 class="section__suptitle">
+                            ОТЗЫВЫ
+                        </h3>
+                        <h2 class="section__title">
+                            НАШИХ КЛИЕНТОВ
+                        </h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="reviews__slider-navigation">
+                        <div class="reviews__slider-navigation__item" data-slide="1">
+                            <img src="images/reviews/1.jpg" alt="">
+                            <div class="reviews__slider-navigation__item-info">
+                                <h4 class="reviews__slider-navigation__item-author">
+                                    Евгений
+                                </h4>
+                                <div class="reviews__slider-navigation__item-place">
+                                    Санкт-Петербург
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-navigation__item" data-slide="2">
+                            <img src="images/reviews/2.jpg" alt="">
+                            <div class="reviews__slider-navigation__item-info">
+                                <h4 class="reviews__slider-navigation__item-author">
+                                    Александр
+                                </h4>
+                                <div class="reviews__slider-navigation__item-place">
+                                    Санкт-Петербург
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-navigation__item" data-slide="3">
+                            <img src="images/reviews/3.jpg" alt="">
+                            <div class="reviews__slider-navigation__item-info">
+                                <h4 class="reviews__slider-navigation__item-author">
+                                    Вячеслав
+                                </h4>
+                                <div class="reviews__slider-navigation__item-place">
+                                    Санкт-Петербург
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-navigation__item" data-slide="4">
+                            <img src="images/reviews/4.jpg" alt="">
+                            <div class="reviews__slider-navigation__item-info">
+                                <h4 class="reviews__slider-navigation__item-author">
+                                    Елена
+                                </h4>
+                                <div class="reviews__slider-navigation__item-place">
+                                    Санкт-Петербург
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-navigation__item" data-slide="5">
+                            <img src="images/reviews/5.jpg" alt="">
+                            <div class="reviews__slider-navigation__item-info">
+                                <h4 class="reviews__slider-navigation__item-author">
+                                    Евгений
+                                </h4>
+                                <div class="reviews__slider-navigation__item-place">
+                                    Санкт-Петербург
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__slider">
+                    <div class="swiper-wrapper">
+                        <div class="reviews__slider-item swiper-slide">
+                            <div class="reviews__slider-item__inner">
+                                <div class="reviews__slider-item__content">
+                                    <div class="reviews__slider-item-container">
+                                        <div class="reviews__slider-item__body">
+                                            <h4 class="reviews__slider-item__author">
+                                                Евгений
+                                            </h4>
+                                            <div class="reviews__slider-item__text">
+                                                Tony has more than 10 years of experience, building and implementing startups. As CTO of Flexo, Tony projects the vision of the company by directing its strategic technology investments. Before Flexo, Tony was Senior Director of Research and Modeling at CDA Insurance, where he managed a team of developers. Tom has his master’s degree in Analytics, and a bachelor’s degree in Psychology from University of London.
+                                            </div>
+                                            <div class="reviews__slider-item__rating">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                            </div>
+                                            <a class="reviews__slider-item__btn" href="#">
+                                                Подробнее...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="reviews__slider-item__video" data-fslightbox="first-lightbox" href="https://www.youtube.com/watch?v=60ItHLz5WEA">
+                                    <img src="images/reviews-video.jpg" alt="">
+                                    <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="57" cy="57" r="56.5" stroke="white"/>
+                                        <path d="M77.812 54.8893C78.8978 55.6886 78.8978 57.3114 77.812 58.1107L53.1856 76.2386C51.865 77.2108 50 76.2678 50 74.628V38.372C50 36.7322 51.865 35.7892 53.1856 36.7614L77.812 54.8893Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item swiper-slide">
+                            <div class="reviews__slider-item__inner">
+                                <div class="reviews__slider-item__content">
+                                    <div class="reviews__slider-item-container">
+                                        <div class="reviews__slider-item__body">
+                                            <h4 class="reviews__slider-item__author">
+                                                Александр
+                                            </h4>
+                                            <div class="reviews__slider-item__text">
+                                                Tony has more than 10 years of experience, building and implementing startups. As CTO of Flexo, Tony projects the vision of the company by directing its strategic technology investments. Before Flexo, Tony was Senior Director of Research and Modeling at CDA Insurance, where he managed a team of developers. Tom has his master’s degree in Analytics, and a bachelor’s degree in Psychology from University of London.
+                                            </div>
+                                            <div class="reviews__slider-item__rating">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                            </div>
+                                            <a class="reviews__slider-item__btn" href="#">
+                                                Подробнее...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="reviews__slider-item__video" data-fslightbox="first-lightbox" href="https://www.youtube.com/watch?v=4SYOIqyhA8I">
+                                    <img src="images/reviews-video.jpg" alt="">
+                                    <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="57" cy="57" r="56.5" stroke="white"/>
+                                        <path d="M77.812 54.8893C78.8978 55.6886 78.8978 57.3114 77.812 58.1107L53.1856 76.2386C51.865 77.2108 50 76.2678 50 74.628V38.372C50 36.7322 51.865 35.7892 53.1856 36.7614L77.812 54.8893Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item swiper-slide">
+                            <div class="reviews__slider-item__inner">
+                                <div class="reviews__slider-item__content">
+                                    <div class="reviews__slider-item-container">
+                                        <div class="reviews__slider-item__body">
+                                            <h4 class="reviews__slider-item__author">
+                                                Вячеслав
+                                            </h4>
+                                            <div class="reviews__slider-item__text">
+                                                Tony has more than 10 years of experience, building and implementing startups. As CTO of Flexo, Tony projects the vision of the company by directing its strategic technology investments. Before Flexo, Tony was Senior Director of Research and Modeling at CDA Insurance, where he managed a team of developers. Tom has his master’s degree in Analytics, and a bachelor’s degree in Psychology from University of London.
+                                            </div>
+                                            <div class="reviews__slider-item__rating">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                            </div>
+                                            <a class="reviews__slider-item__btn" href="#">
+                                                Подробнее...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="reviews__slider-item__video" data-fslightbox="first-lightbox" href="https://www.youtube.com/watch?v=YQRHrco73g4">
+                                    <img src="images/reviews-video.jpg" alt="">
+                                    <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="57" cy="57" r="56.5" stroke="white"/>
+                                        <path d="M77.812 54.8893C78.8978 55.6886 78.8978 57.3114 77.812 58.1107L53.1856 76.2386C51.865 77.2108 50 76.2678 50 74.628V38.372C50 36.7322 51.865 35.7892 53.1856 36.7614L77.812 54.8893Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item swiper-slide">
+                            <div class="reviews__slider-item__inner">
+                                <div class="reviews__slider-item__content">
+                                    <div class="reviews__slider-item-container">
+                                        <div class="reviews__slider-item__body">
+                                            <h4 class="reviews__slider-item__author">
+                                                Елена
+                                            </h4>
+                                            <div class="reviews__slider-item__text">
+                                                Tony has more than 10 years of experience, building and implementing startups. As CTO of Flexo, Tony projects the vision of the company by directing its strategic technology investments. Before Flexo, Tony was Senior Director of Research and Modeling at CDA Insurance, where he managed a team of developers. Tom has his master’s degree in Analytics, and a bachelor’s degree in Psychology from University of London.
+                                            </div>
+                                            <div class="reviews__slider-item__rating">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                            </div>
+                                            <a class="reviews__slider-item__btn" href="#">
+                                                Подробнее...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="reviews__slider-item__video" data-fslightbox="first-lightbox" href="https://www.youtube.com/watch?v=M-P4QBt-FWw">
+                                    <img src="images/reviews-video.jpg" alt="">
+                                    <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="57" cy="57" r="56.5" stroke="white"/>
+                                        <path d="M77.812 54.8893C78.8978 55.6886 78.8978 57.3114 77.812 58.1107L53.1856 76.2386C51.865 77.2108 50 76.2678 50 74.628V38.372C50 36.7322 51.865 35.7892 53.1856 36.7614L77.812 54.8893Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item swiper-slide">
+                            <div class="reviews__slider-item__inner">
+                                <div class="reviews__slider-item__content">
+                                    <div class="reviews__slider-item-container">
+                                        <div class="reviews__slider-item__body">
+                                            <h4 class="reviews__slider-item__author">
+                                                Евгений
+                                            </h4>
+                                            <div class="reviews__slider-item__text">
+                                                Tony has more than 10 years of experience, building and implementing startups. As CTO of Flexo, Tony projects the vision of the company by directing its strategic technology investments. Before Flexo, Tony was Senior Director of Research and Modeling at CDA Insurance, where he managed a team of developers. Tom has his master’s degree in Analytics, and a bachelor’s degree in Psychology from University of London.
+                                            </div>
+                                            <div class="reviews__slider-item__rating">
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.7871 5.89552L11.8141 5.17481L9.591 0.680671C9.53029 0.557624 9.43039 0.458015 9.307 0.397468C8.99753 0.245124 8.62147 0.372078 8.46673 0.680671L6.24366 5.17481L1.27063 5.89552C1.13352 5.91505 1.00816 5.9795 0.912191 6.07716C0.796163 6.19607 0.732227 6.35606 0.73443 6.52196C0.736634 6.68787 0.804797 6.84611 0.923942 6.96192L4.522 10.46L3.67194 15.3994C3.65201 15.5143 3.66476 15.6325 3.70875 15.7405C3.75274 15.8486 3.82621 15.9422 3.92082 16.0107C4.01544 16.0792 4.12742 16.1199 4.24406 16.1282C4.36071 16.1365 4.47735 16.1121 4.58076 16.0576L9.02887 13.7256L13.477 16.0576C13.5984 16.1221 13.7394 16.1436 13.8746 16.1201C14.2154 16.0615 14.4446 15.7393 14.3858 15.3994L13.5357 10.46L17.1338 6.96192C17.2317 6.86622 17.2964 6.74122 17.316 6.6045C17.3688 6.2627 17.1299 5.9463 16.7871 5.89552V5.89552Z" fill="#EDC5A2"/>
+                                                </svg>
+                                            </div>
+                                            <a class="reviews__slider-item__btn" href="#">
+                                                Подробнее...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="reviews__slider-item__video" data-fslightbox="first-lightbox" href="https://www.youtube.com/watch?v=6RLLOEzdxsM">
+                                    <img src="images/reviews-video.jpg" alt="">
+                                    <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="57" cy="57" r="56.5" stroke="white"/>
+                                        <path d="M77.812 54.8893C78.8978 55.6886 78.8978 57.3114 77.812 58.1107L53.1856 76.2386C51.865 77.2108 50 76.2678 50 74.628V38.372C50 36.7322 51.865 35.7892 53.1856 36.7614L77.812 54.8893Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__slider-controls">
+                        <div class="reviews__slider-prev">
+                            <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.4L6.6 0L0.6 6L6.6 12L8 10.6L4.4 7H31V5H4.4L8 1.4Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="reviews__slider-scrollbar"></div>
+                        <div class="reviews__slider-next">
+                            <svg width="31" height="12" viewBox="0 0 31 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 1.4L24.4 0L30.4 6L24.4 12L23 10.6L26.6 7H0V5H26.6L23 1.4Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div class="container-fluid">
+                    <img src="images/map.jpg" alt="">
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <a class="logo" href="#">
+                    <img src="images/logo-small.png" alt="">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link active">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Автопарк
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Аренда
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Для бизнеса
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a href="#" class="menu__list-link">
+                                Личный кабинет
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__copy">
+                    2022 © galeoncar
+                </div>
+                <a href="#" class="footer__policy">
+                    Политика конфиденциальности
+                </a>
+                <div class="footer__socials">
+                    <a class="footer__socials-item" href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5461 20H4.88308C4.39522 20 4 19.6045 4 19.1169V4.88307C4 4.39528 4.39529 4 4.88308 4H19.117C19.6047 4 20 4.39528 20 4.88307V19.1169C20 19.6046 19.6046 20 19.117 20H15.0398V13.8039H17.1195L17.4309 11.3892H15.0398V9.84755C15.0398 9.14843 15.2339 8.672 16.2364 8.672L17.5151 8.67144V6.5117C17.294 6.48227 16.5349 6.41652 15.6519 6.41652C13.8083 6.41652 12.5461 7.54184 12.5461 9.6084V11.3892H10.461V13.8039H12.5461V20Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a class="footer__socials-item" href="#">
+                        <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.52786 15.2767L5.58208 15.0768L5.47905 14.8971C4.89353 13.876 4.55226 12.6593 4.55226 11.4479C4.55226 7.61111 7.67171 4.5 11.5261 4.5C13.379 4.5 15.1339 5.22819 16.4519 6.54167C17.763 7.84817 18.4494 9.59491 18.5 11.4026C18.4963 15.2363 15.3783 18.3438 11.5261 18.3438C10.3565 18.3438 9.23345 18.0527 8.2035 17.5151L8.0322 17.4257L7.84529 17.4747L4.70866 18.2973L5.52786 15.2767ZM12.5431 15.402L12.5745 15.4145L12.6074 15.4227C13.0938 15.5439 13.579 15.5454 13.9548 15.4837C14.2375 15.4418 14.5797 15.2841 14.8578 15.1017C15.1276 14.9248 15.4639 14.643 15.6004 14.2803C15.6954 14.0278 15.7447 13.7867 15.7615 13.5778C15.7773 13.3803 15.767 13.1751 15.7111 13.0081L15.6736 12.8959L15.5899 12.8125C15.5116 12.7345 15.4204 12.6808 15.355 12.6446C15.2897 12.6084 15.2078 12.5675 15.1164 12.5219C14.9865 12.4423 14.7073 12.2986 14.4669 12.1788C14.3273 12.1092 14.1864 12.0407 14.0693 11.9857C13.9649 11.9367 13.8475 11.8831 13.7743 11.8588C13.7707 11.8576 13.7662 11.8561 13.7612 11.8543C13.697 11.8324 13.5249 11.7733 13.343 11.7898C13.2262 11.8004 13.102 11.84 12.9883 11.9243C12.8786 12.0055 12.8036 12.1098 12.7517 12.2133C12.7278 12.261 12.6448 12.3776 12.5247 12.5239C12.4586 12.6044 12.3946 12.6779 12.3459 12.732C12.3284 12.7239 12.31 12.7155 12.2907 12.7067C12.0216 12.5841 11.5803 12.3831 11.0202 11.9058C10.6037 11.5273 10.3115 11.1211 10.1702 10.8926C10.1772 10.884 10.1834 10.8763 10.1885 10.8698C10.2027 10.8519 10.2196 10.8302 10.235 10.8104C10.2419 10.8015 10.2485 10.793 10.2543 10.7855C10.3001 10.7268 10.3355 10.684 10.3634 10.6563L10.0105 10.3021L10.3634 10.6563C10.5259 10.4943 10.6088 10.3289 10.6614 10.2238C10.6631 10.2204 10.6648 10.2171 10.6664 10.2138C10.7895 9.96854 10.7895 9.69813 10.6664 9.45286L10.63 9.38025L10.6232 9.37347C10.6137 9.35311 10.602 9.32688 10.5878 9.29457C10.5462 9.19921 10.4925 9.07022 10.4338 8.92731C10.398 8.84008 10.3602 8.74731 10.3227 8.65526C10.2403 8.45292 10.1593 8.25408 10.1039 8.12538C10.0027 7.89012 9.85665 7.68067 9.62224 7.57449C9.42022 7.48298 9.16789 7.51042 9.22648 7.51042H9.22587H9.22525H9.22464H9.22402H9.2234H9.22278H9.22216H9.22154H9.22092H9.2203H9.21967H9.21904H9.21842H9.21779H9.21716H9.21653H9.2159H9.21527H9.21463H9.214H9.21336H9.21272H9.21209H9.21145H9.21081H9.21016H9.20952H9.20888H9.20823H9.20759H9.20694H9.20629H9.20564H9.20499H9.20434H9.20369H9.20304H9.20238H9.20173H9.20107H9.20042H9.19976H9.1991H9.19844H9.19778H9.19712H9.19645H9.19579H9.19512H9.19446H9.19379H9.19312H9.19245H9.19178H9.19111H9.19044H9.18977H9.1891H9.18842H9.18775H9.18707H9.18639H9.18571H9.18503H9.18435H9.18367H9.18299H9.18231H9.18163H9.18094H9.18026H9.17957H9.17888H9.1782H9.17751H9.17682H9.17613H9.17544H9.17474H9.17405H9.17336H9.17266H9.17197H9.17127H9.17058H9.16988H9.16918H9.16848H9.16778H9.16708H9.16638H9.16568H9.16497H9.16427H9.16356H9.16286H9.16215H9.16144H9.16074H9.16003H9.15932H9.15861H9.1579H9.15719H9.15648H9.15576H9.15505H9.15434H9.15362H9.15291H9.15219H9.15147H9.15076H9.15004H9.14932H9.1486H9.14788H9.14716H9.14644H9.14571H9.14499H9.14427H9.14354H9.14282H9.14209H9.14137H9.14064H9.13992H9.13919H9.13846H9.13773H9.137H9.13627H9.13554H9.13481H9.13408H9.13335H9.13261H9.13188H9.13115H9.13041H9.12968H9.12894H9.12821H9.12747H9.12673H9.12599H9.12526H9.12452H9.12378H9.12304H9.1223H9.12156H9.12082H9.12008H9.11933H9.11859H9.11785H9.1171H9.11636H9.11562H9.11487H9.11413H9.11338H9.11264H9.11189H9.11114H9.11039H9.10965H9.1089H9.10815H9.1074H9.10665H9.1059H9.10515H9.1044H9.10365H9.1029H9.10215H9.1014H9.10064H9.09989H9.09914H9.09838H9.09763H9.09688H9.09612H9.09537H9.09461H9.09386H9.0931H9.09235H9.09159H9.09083H9.09008H9.08932H9.08856H9.08781H9.08705H9.08629H9.08553H9.08477H9.08401H9.08325H9.08249H9.08174H9.08098H9.08022H9.07945H9.07869H9.07793H9.07717H9.07641H9.07565H9.07489H9.07413H9.07336H9.0726H9.07184H9.07108H9.07032H9.06955H9.06879H9.06803H9.06726H9.0665H9.06574H9.06497H9.06421H9.06344H9.06268H9.06192H9.06115H9.06039H9.05962H9.05886H9.05809H9.05733H9.05656H9.0558H9.05503H9.05427H9.0535H9.05274H9.05197H9.05121H9.05044H9.04968H9.04891H9.04815H9.04738H9.04662H9.04585H9.04508H9.04432H9.04355H9.04279H9.04202H9.04126H9.04049H9.03972H9.03896H9.03819H9.03743H9.03666H9.0359H9.03513H9.03437H9.0336H9.03284H9.03207H9.03131H9.03054H9.02978H9.02901H9.02825H9.02748H9.02672H9.02595H9.02519H9.02443H9.02366H9.0229H9.02213H9.02137H9.02061H9.01984H9.01908H9.01832H9.01755H9.01679H9.01603H9.01527H9.0145H9.01374H9.01298H9.01222H9.01146H9.01069H9.00993H9.00917H9.00841H9.00765H9.00689H9.00613H9.00537H9.00461H9.00385H9.00309H9.00233H9.00157H9.00082H9.00006H8.9993H8.99854H8.99779H8.99703H8.99627H8.99552H8.99476H8.994H8.99325H8.99249H8.99174H8.99098H8.99023H8.98947H8.98872H8.98797H8.98721H8.98646H8.98571H8.98496H8.98421H8.98346H8.9827H8.98195H8.9812H8.98045H8.9797H8.97896H8.97821H8.97746H8.97671H8.97596H8.97522H8.97447H8.97372H8.97298H8.97223H8.97149H8.97075H8.97H8.96926H8.96851H8.96777H8.96703H8.96629H8.96555H8.96481H8.96407H8.96333H8.96259H8.96185H8.96111H8.96037H8.95964H8.9589H8.95816H8.95743H8.95669H8.95596H8.95523H8.95449H8.95376H8.95303H8.9523H8.95156H8.95083H8.9501H8.94937H8.94865H8.94792H8.94719H8.94646H8.94574H8.94501H8.94429H8.94356H8.94284H8.94211H8.94139H8.94067H8.93995H8.93923H8.93851H8.93779H8.93707H8.93635H8.93563H8.93492H8.9342H8.93348H8.93277H8.93206H8.93134H8.93063H8.92992H8.92921H8.9285H8.92779H8.92708H8.92637H8.92566H8.92495H8.92425H8.92354H8.92284H8.92213H8.92143H8.92073H8.92003H8.91933H8.91863H8.91793H8.91723H8.91653H8.91583H8.91514H8.91444H8.91375H8.91305H8.91236H8.91167H8.91098H8.91029H8.9096H8.90891H8.90822H8.90754H8.90685H8.90616H8.90548H8.9048H8.90411H8.90343H8.90275H8.90207H8.90139H8.90071H8.90004H8.89936H8.89868H8.89801H8.89734H8.89666H8.89599H8.89532H8.89465H8.89398H8.89332H8.89265H8.89198H8.89132H8.89065H8.88999H8.88933H8.88867H8.88801H8.88735H8.88669H8.88603H8.88538H8.88472H8.88407H8.88341H8.88276H8.88211H8.88146H8.88081H8.88017H8.87952H8.87887H8.87823H8.87758H8.87694H8.8763H8.87566H8.87502H8.87438H8.87375H8.87311H8.87247H8.87184H8.87121H8.87058H8.86995H8.86932H8.86869H8.86806H8.86744H8.86681H8.86619H8.86556H8.86494H8.86432H8.8637H8.86309H8.86247H8.86185H8.86124H8.86063C8.85578 7.51042 8.85062 7.5104 8.84516 7.51038C8.68076 7.50987 8.24671 7.50853 7.93848 7.91808C7.93412 7.92387 7.92421 7.93554 7.90999 7.95229C7.83887 8.03605 7.65991 8.24681 7.52833 8.48408C7.3527 8.80077 7.2108 9.22223 7.2108 9.78125C7.2108 10.3629 7.41871 10.9012 7.62004 11.2881C7.79387 11.6222 7.98722 11.8891 8.09925 12.0167C8.29174 12.3081 9.53681 14.1638 11.4754 14.976C11.7906 15.1316 12.1085 15.2449 12.3339 15.3252C12.4182 15.3552 12.4896 15.3806 12.5431 15.402ZM12.2607 12.8218C12.2607 12.8218 12.2613 12.8213 12.2625 12.8203C12.2613 12.8214 12.2607 12.8219 12.2607 12.8218Z" fill="white" stroke="white"/>
+                        </svg>
+                    </a>
+                    <a class="footer__socials-item" href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C9.82733 4 9.5549 4.00921 8.70161 4.04814C7.8501 4.08698 7.26855 4.22223 6.7597 4.42001C6.23363 4.62442 5.78748 4.89797 5.34271 5.34271C4.89797 5.78748 4.62442 6.23363 4.42001 6.7597C4.22223 7.26855 4.08698 7.8501 4.04814 8.70161C4.00921 9.5549 4 9.82733 4 12C4 14.1727 4.00921 14.4451 4.04814 15.2984C4.08698 16.1499 4.22223 16.7314 4.42001 17.2403C4.62442 17.7664 4.89797 18.2125 5.34271 18.6573C5.78748 19.102 6.23363 19.3756 6.7597 19.58C7.26855 19.7778 7.8501 19.913 8.70161 19.9519C9.5549 19.9908 9.82733 20 12 20C14.1727 20 14.4451 19.9908 15.2984 19.9519C16.1499 19.913 16.7314 19.7778 17.2403 19.58C17.7664 19.3756 18.2125 19.102 18.6573 18.6573C19.102 18.2125 19.3756 17.7664 19.58 17.2403C19.7778 16.7314 19.913 16.1499 19.9519 15.2984C19.9908 14.4451 20 14.1727 20 12C20 9.82733 19.9908 9.5549 19.9519 8.70161C19.913 7.8501 19.7778 7.26855 19.58 6.7597C19.3756 6.23363 19.102 5.78748 18.6573 5.34271C18.2125 4.89797 17.7664 4.62442 17.2403 4.42001C16.7314 4.22223 16.1499 4.08698 15.2984 4.04814C14.4451 4.00921 14.1727 4 12 4ZM12 5.44144C14.1361 5.44144 14.3891 5.4496 15.2327 5.48809C16.0127 5.52366 16.4363 5.65398 16.7182 5.76354C17.0916 5.90867 17.3581 6.08202 17.638 6.36198C17.918 6.64191 18.0913 6.90841 18.2365 7.28183C18.346 7.56373 18.4763 7.98732 18.5119 8.76731C18.5504 9.61088 18.5586 9.86391 18.5586 12C18.5586 14.1361 18.5504 14.3891 18.5119 15.2327C18.4763 16.0127 18.346 16.4363 18.2365 16.7182C18.0913 17.0916 17.918 17.3581 17.638 17.638C17.3581 17.918 17.0916 18.0913 16.7182 18.2365C16.4363 18.346 16.0127 18.4763 15.2327 18.5119C14.3892 18.5504 14.1362 18.5586 12 18.5586C9.86375 18.5586 9.61079 18.5504 8.76731 18.5119C7.98732 18.4763 7.56373 18.346 7.28183 18.2365C6.90841 18.0913 6.64191 17.918 6.36198 17.638C6.08205 17.3581 5.90867 17.0916 5.76354 16.7182C5.65398 16.4363 5.52366 16.0127 5.48809 15.2327C5.4496 14.3891 5.44144 14.1361 5.44144 12C5.44144 9.86391 5.4496 9.61088 5.48809 8.76731C5.52366 7.98732 5.65398 7.56373 5.76354 7.28183C5.90867 6.90841 6.08202 6.64191 6.36198 6.36198C6.64191 6.08202 6.90841 5.90867 7.28183 5.76354C7.56373 5.65398 7.98732 5.52366 8.76731 5.48809C9.61088 5.4496 9.86391 5.44144 12 5.44144ZM7.89189 12C7.89189 9.73114 9.73114 7.89189 12 7.89189C14.2689 7.89189 16.1081 9.73114 16.1081 12C16.1081 14.2689 14.2689 16.1081 12 16.1081C9.73114 16.1081 7.89189 14.2689 7.89189 12ZM12 14.6667C10.5272 14.6667 9.33333 13.4728 9.33333 12C9.33333 10.5272 10.5272 9.33333 12 9.33333C13.4728 9.33333 14.6667 10.5272 14.6667 12C14.6667 13.4728 13.4728 14.6667 12 14.6667ZM16.2704 8.68957C16.8006 8.68957 17.2304 8.25979 17.2304 7.72959C17.2304 7.19939 16.8006 6.76957 16.2704 6.76957C15.7402 6.76957 15.3104 7.19939 15.3104 7.72959C15.3104 8.25979 15.7402 8.68957 16.2704 8.68957Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
